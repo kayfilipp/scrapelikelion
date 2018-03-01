@@ -4,7 +4,10 @@
 
 </head>
 <h1> Food Menu for Covel </h1>
+<% sum = 0 %>
 <% @foods.each do|x| %>
+<% if x.test == "Beef" %>
 <p><%= x.text %></p>
+<% print sum %>
 <% end %>
 </html>

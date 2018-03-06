@@ -1,19 +1,29 @@
 
 
-<<<<<<< HEAD
 </head>
  <link rel = "stylesheet" href = "scrape.scss" />
 
-<h1> Food Menu for Covel </h1>
-
 <body> 
+<div class="navbar">
+  <a href="#home">De Nevo</a>
+  <a href="#news">Feasto</a>
+  <a href="#news">Bplato</a>
+  <div class="dropdown">
+    <button class="dropbtn">Covel
+      <i class="fa fa-caret-down"></i>
+    </button>
+
+  </div> 
+</div>
+
+<h1> Harpee </h1>
 
 
 <div class="slide-left">
 <p>See any food you love?</p>
 </div>
 <p>
-come enjoy the mediterannean food listed below
+Come enjoy the mediterannean food listed below
 </p>
 <form id="form" class="topBefore">
 		
@@ -25,9 +35,8 @@ come enjoy the mediterannean food listed below
 </form>
 <body> 
 
+
+
 <% @foods.each do|x| %>
-=======
-<%= @foods.each do |x| %>
->>>>>>> 9311adb6c32c4a1e4cf6feac54bffe0e39f0f21a
 <p><%= x.text %></p>
 <% end %> %>

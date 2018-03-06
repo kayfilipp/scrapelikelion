@@ -4,7 +4,7 @@ class ScrapeController < ApplicationController
        require 'open-uri'
        require 'nokogiri'
        
-       @doc = Nokogiri::HTML(open('http://menu.dining.ucla.edu/Menus/Lunch'))
+       @doc = Nokogiri::HTML(open('http://menu.dining.ucla.edu/Menus'))
        @foods = @doc.css('a.recipelink')
        puts @doc
        puts "hello!"

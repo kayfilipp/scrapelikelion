@@ -1,29 +1,5 @@
 
-<html> 
-<head>
 
-</head>
- <link rel = "stylesheet" href = "scrape.scss" />
-<h1> Food Menu for Covel </h1>
-<body> 
-
-
-<p>See any food you love? <3</p>
-<p>
-come enjoy the mediterannean food listed below
-</p>
-<p>
-Organic Free Range Caged Chicken
-</p>
-
-<p>
-Carb up with us
-</p>
-<body> 
-
-<% @foods.each do|x| %>
+<%= @foods.each do |x| %>
 <p><%= x.text %></p>
-<% end %>
-
-</body>
-</html>
+<% end %> %>

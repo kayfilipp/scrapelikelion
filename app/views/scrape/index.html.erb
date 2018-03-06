@@ -1,7 +1,6 @@
 
-<html> 
-<head>
 
+<<<<<<< HEAD
 </head>
  <link rel = "stylesheet" href = "scrape.scss" />
 
@@ -16,18 +15,19 @@
 <p>
 come enjoy the mediterannean food listed below
 </p>
-<p>
-Organic Free Range Caged Chicken
-</p>
-
-<p>
-Carb up with us
-</p>
+<form id="form" class="topBefore">
+		
+		  <input id="name" type="text" placeholder="NAME">
+		  <input id="email" type="text" placeholder="E-MAIL">
+<hr>
+  <input id="submit" type="submit" value="GO!">
+  
+</form>
 <body> 
 
 <% @foods.each do|x| %>
+=======
+<%= @foods.each do |x| %>
+>>>>>>> 9311adb6c32c4a1e4cf6feac54bffe0e39f0f21a
 <p><%= x.text %></p>
-<% end %>
-
-</body>
-</html>
+<% end %> %>

@@ -30,15 +30,6 @@ Submit your Email to be notified of good food!
   
 </form>
 
-
-
-
-<a name="DENEVE">De Neve</a>
-<br>
-<a name="BPLATE">B plate</a>
-<a name="COVEL">Covel</a>
-<a name="FEAST">Feast</a>
-
 </div>
 <body> 
 
@@ -46,7 +37,12 @@ Submit your Email to be notified of good food!
 
 
 
-<% @foods.each do|x| %>
->>>>>>> beab6233f33cabcd8c0f86de72051a96980f7678
-<p><%= x.text %></p>
-<% end %> %>
+
+
+<%= @headers.each do |x| %>
+    <p> <%= x.css("h3.col-header").text %></p>
+       <%= x.css("a.recipelink").each do |y| %>
+           <p> <%= y.text %> </p>
+       <% end %>
+    <p>================</p>
+<% end %>

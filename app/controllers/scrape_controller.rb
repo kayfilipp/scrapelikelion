@@ -6,7 +6,7 @@ class ScrapeController < ApplicationController
        
        @doc = Nokogiri::HTML(open('http://menu.dining.ucla.edu/Menus'))
        @foods = @doc.css('a.recipelink')
-       puts @doc
-       puts "hello!"
+       @headers = @doc.css("div.menu-block")
+       puts @headers
     end
 end

@@ -1,12 +1,52 @@
-<%= @headers.each do |x| %>
-    <p> <%= x.css("h3.col-header").text %></p>
-       <%= x.css("a.recipelink").each do |y| %>
-           <p> <%= y.text %> </p>
-       <% end %>
-    <p>================</p>
-<% end %>
-<p>===============================================</p>
-<br><br>
-<%= @foods.each do |x| %>
+<head>
+<link rel = "stylesheet" href = "scrape.scss" />
+</head>
+ 
+
+<body> 
+
+<div class="navbar">
+  <a href="#DENEVE">De Nevo</a>
+  <a href="#FEAST">Feasto</a>
+  <a href="#BPLATE">Bplato</a>
+  <a href="#COVEL">Covel</a>
+</div>
+
+<h1> Harpee </h1>
+
+
+<div class="slide-left">
+<p>See any food you love?</p>
+</div>
+<p>
+Submit your Email to be notified of good food!
+</p>
+<form id="form" class="topBefore">
+		
+		  <input id="name" type="text" placeholder="NAME">
+		  <input id="email" type="text" placeholder="E-MAIL">
+<hr>
+  <input id="submit" type="submit" value="Send Me Food!">
+  
+</form>
+
+
+
+
+<a name="DENEVE">De Neve</a>
+<br>
+<a name="BPLATE">B plate</a>
+<a name="COVEL">Covel</a>
+<a name="FEAST">Feast</a>
+
+</div>
+<body> 
+
+
+
+
+
+<% @foods.each do|x| %>
+>>>>>>> beab6233f33cabcd8c0f86de72051a96980f7678
 <p><%= x.text %></p>
 <% end %> %>

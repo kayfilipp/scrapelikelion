@@ -1,0 +1,11 @@
+<%= @headers.each do |x| %>
+    <p> <%= x.css("h3.col-header").text %></p>
+       <%= x.css("a.recipelink").each do |y| %>
+           <p> <%= y.text %> </p>
+       <% end %>
+    <p>================</p>
+<% end %>
+<p>===============================================</p>
+<br><br>
+<%= @foods.each do |x| %>
+=======

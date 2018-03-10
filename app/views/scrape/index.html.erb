@@ -40,7 +40,7 @@ Submit your Email to be notified of good food!
 
 
 <%= @headers.each do |x| %>
-    <p> <%= x.css("h3.col-header").text %></p>
+    <p><strong><%= x.css("h3.col-header").text %></strong> </p>
        <%= x.css("a.recipelink").each do |y| %>
            <p> <%= y.text %> </p>
        <% end %>

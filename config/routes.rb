@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   
   # Email Route
   get "/send_mail" => "email#send_mail"
+  get "/index" => "scrape#index"
   
   
   

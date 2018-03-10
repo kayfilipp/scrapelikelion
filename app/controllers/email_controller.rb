@@ -1,9 +1,9 @@
-class WelcomeController < ApplicationController
+class EmailController < ApplicationController
     def index
     end
     
     def send_mail
-        WelcomeMailer.send_email.deliver_now!
+        EmailMailer.send_email.deliver_now!
         
     end
     

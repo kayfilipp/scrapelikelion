@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root 'scrape#index'
   
   # Email Route
-  get "/send_mail" => "email#send_mail"
+  get '/scrape/sendMail' => 'scrape#sendMail'
   
   
   

@@ -25,7 +25,7 @@
 <p>
 Submit your Email to be notified of good food!
 </p>
-<form id="form" class="topBefore">
+<form id="form" class="topBefore" action = 'scrape/sendMail'>
 		
 		  <input id="name" type="text" placeholder="NAME">
 		  <input id="email" type="text" placeholder="E-MAIL">
@@ -43,10 +43,13 @@ Submit your Email to be notified of good food!
 
 
 
-<%= @headers.each do |x| %>
+<% @headers.each do |x| %>
+<% break if @counter > 0 && x.css("h3.col-header").text == @firstTitle %>
     <p><strong><%= x.css("h3.col-header").text %></strong> </p>
        <%= x.css("a.recipelink").each do |y| %>
            <p> <%= y.text %> </p>
        <% end %>
     <p>================</p>
+<%= @counter+= 1 %>
+  
 <% end %>

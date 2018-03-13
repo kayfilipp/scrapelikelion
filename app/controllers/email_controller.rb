@@ -3,8 +3,8 @@ class WelcomeController < ApplicationController
     end
     
     def send_mail
-        WelcomeMailer.send_email.deliver_now!
-        
+        @mailAddress = params[:email]
+        new_user_email.notify_user(@mailAddress).deliver
     end
     
     
